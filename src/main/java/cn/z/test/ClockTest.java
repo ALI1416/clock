@@ -3,7 +3,7 @@ package cn.z.test;
 import cn.z.Clock;
 
 /**
- * <h1>高性能系统时钟测试</h1>
+ * <h1>高性能时钟测试</h1>
  *
  * <p>
  * createDate 2020/12/22 19:53:00
@@ -15,16 +15,16 @@ import cn.z.Clock;
 public class ClockTest {
 
     public static void main(String[] args) {
-        once();
-        _100w();
-        _1e();
-        _21e();
+        test();
+        compare100w();
+        compare1e();
+        compare21e();
     }
 
     /**
-     * 使用方法
+     * 测试
      */
-    static void once() {
+    static void test() {
         System.out.println("现在时间戳：" + Clock.now());
         // 现在时间戳：1614047152484
     }
@@ -32,7 +32,7 @@ public class ClockTest {
     /**
      * 100万次高性能时钟与系统时钟比较
      */
-    static void _100w() {
+    static void compare100w() {
         compare(1000000);
         // 高性能时钟调用1000000次使用时间为：5毫秒
         // 系统时钟调用1000000次使用时间为：11毫秒
@@ -42,7 +42,7 @@ public class ClockTest {
     /**
      * 1亿次高性能时钟与系统时钟比较
      */
-    static void _1e() {
+    static void compare1e() {
         compare(100000000);
         // 高性能时钟调用100000000次使用时间为：3毫秒
         // 系统时钟调用100000000次使用时间为：327毫秒
@@ -52,7 +52,7 @@ public class ClockTest {
     /**
      * 21亿次高性能时钟与系统时钟比较
      */
-    static void _21e() {
+    static void compare21e() {
         compare(Integer.MAX_VALUE);
         // 高性能时钟调用2147483647次使用时间为：35毫秒
         // 系统时钟调用2147483647次使用时间为：6750毫秒
@@ -61,7 +61,7 @@ public class ClockTest {
 
     /**
      * 高性能时钟与系统时钟比较
-     * 
+     *
      * @param count 次数
      */
     static void compare(int count) {

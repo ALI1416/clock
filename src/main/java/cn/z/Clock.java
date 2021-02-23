@@ -19,21 +19,21 @@ public class Clock {
     /**
      * 现在时间戳(原子长整形，防止多线程异常)
      */
-    private final static AtomicLong now = new AtomicLong(System.currentTimeMillis());
+    private final static AtomicLong NOW = new AtomicLong(System.currentTimeMillis());
 
     static {
         Executors.newSingleThreadScheduledExecutor(runnable -> {
             Thread thread = new Thread(runnable, "Clock");
             thread.setDaemon(true);
             return thread;
-        }).scheduleAtFixedRate(() -> now.set(System.currentTimeMillis()), 1, 1, TimeUnit.MILLISECONDS);
+        }).scheduleAtFixedRate(() -> NOW.set(System.currentTimeMillis()), 1, 1, TimeUnit.MILLISECONDS);
     }
 
     /**
      * 获取当前时间戳
      */
     public static long now() {
-        return now.get();
+        return NOW.get();
     }
 
 }
