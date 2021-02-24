@@ -1,15 +1,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cn.404z</groupId>
 	<artifactId>clock</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>Clock</name>
 	<description>High performance clock</description>
 	<url>https://github.com/ALI1416/clock</url>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+	</properties>
 
 	<licenses>
 		<license>
@@ -24,10 +32,6 @@
 			<email>ali-k@foxmail.com</email>
 			<organization>404z.cn</organization>
 			<organizationUrl>http://404z.cn</organizationUrl>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<timezone>+8</timezone>
 		</developer>
 	</developers>
 
@@ -37,14 +41,18 @@
 		<url>git:https://github.com/ALI1416/clock.git</url>
 	</scm>
 
-	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven.deploy.skip>true</maven.deploy.skip>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-	</properties>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<name>Sonatype Nexus Snapshots</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<name>Nexus Release Repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 
 	<profiles>
 		<profile>
@@ -72,10 +80,7 @@
 						<artifactId>maven-javadoc-plugin</artifactId>
 						<version>3.2.0</version>
 						<configuration>
-							<encoding>UTF-8</encoding>
-							<charset>UTF-8</charset>
-							<docencoding>UTF-8</docencoding>
-							<!--<javadocExecutable>D:/Program Files/Zulu/zulu-11/bin/javadoc</javadocExecutable>-->
+							<javadocExecutable>D:/Program Files/Zulu/zulu-11/bin/javadoc</javadocExecutable>
 						</configuration>
 						<executions>
 							<execution>
@@ -148,18 +153,6 @@
 					</plugin>
 				</plugins>
 			</build>
-			<distributionManagement>
-				<snapshotRepository>
-					<id>ossrh</id>
-					<name>Sonatype Nexus Snapshots</name>
-					<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-				</snapshotRepository>
-				<repository>
-					<id>ossrh</id>
-					<name>Nexus Release Repository</name>
-					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-				</repository>
-			</distributionManagement>
 		</profile>
 	</profiles>
 
