@@ -21,12 +21,20 @@ public class Clock {
      */
     private final static AtomicLong NOW = new AtomicLong(System.currentTimeMillis());
 
+    // 静态初始化
     static {
         Executors.newSingleThreadScheduledExecutor(runnable -> {
             Thread thread = new Thread(runnable, "Clock");
             thread.setDaemon(true);
             return thread;
         }).scheduleAtFixedRate(() -> NOW.set(System.currentTimeMillis()), 1, 1, TimeUnit.MILLISECONDS);
+    }
+
+    /**
+     * 禁止构造
+     */
+    private Clock() {
+
     }
 
     /**
