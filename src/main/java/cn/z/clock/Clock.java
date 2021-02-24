@@ -1,4 +1,4 @@
-package cn.z;
+package cn.z.clock;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * <h1>高性能时钟</h1>
  *
  * <p>
- * createDate 2020/12/22 19:53:00
+ * createDate 2021/02/24 10:09:31
  * </p>
  *
  * @author ALI[ali-k@foxmail.com]
