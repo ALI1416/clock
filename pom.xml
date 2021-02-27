@@ -5,7 +5,7 @@
 
 	<groupId>cn.404z</groupId>
 	<artifactId>clock</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 
 	<name>Clock</name>
 	<description>High performance clock</description>
@@ -66,6 +66,10 @@
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-compiler-plugin</artifactId>
 						<version>3.8.1</version>
+						<configuration>
+							<source>1.8</source>
+							<target>1.8</target>
+						</configuration>
 					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -94,9 +98,6 @@
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-javadoc-plugin</artifactId>
 						<version>3.2.0</version>
-						<!--<configuration>-->
-						<!--<javadocExecutable>D:/Program Files/Zulu/zulu-11/bin/javadoc</javadocExecutable>-->
-						<!--</configuration>-->
 						<executions>
 							<execution>
 								<id>attach-javadocs</id>
@@ -105,6 +106,7 @@
 									<goal>jar</goal>
 								</goals>
 								<configuration>
+									<source>1.8</source>
 									<additionalJOption>-Xdoclint:none</additionalJOption>
 								</configuration>
 							</execution>
