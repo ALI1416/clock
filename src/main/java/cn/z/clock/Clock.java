@@ -1,5 +1,7 @@
 package cn.z.clock;
 
+import java.sql.Timestamp;
+import java.util.Date;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
@@ -38,10 +40,28 @@ public class Clock {
     }
 
     /**
-     * 获取当前时间戳
+     * 获取时间戳
      */
     public static long now() {
         return NOW.get();
+    }
+
+    /**
+     * 获取Date
+     * 
+     * @since 1.2.0
+     */
+    public static Date date() {
+        return new Date(NOW.get());
+    }
+
+    /**
+     * 获取Timestamp
+     * 
+     * @since 1.2.0
+     */
+    public static Timestamp timestamp() {
+        return new Timestamp(NOW.get());
     }
 
 }
