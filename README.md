@@ -2,10 +2,10 @@
 
 ## 项目地址
 [源码](https://github.com/ALI1416/clock)
-[![Build Status](https://travis-ci.org/ALI1416/clock.svg?branch=master)](https://travis-ci.org/ALI1416/clock)
+[![Build Status](https://travis-ci.com/ALI1416/clock.svg?branch=master)](https://travis-ci.com/ALI1416/clock)
 
 [测试](https://github.com/ALI1416/clock-test)
-[![Build Status](https://travis-ci.org/ALI1416/clock-test.svg?branch=master)](https://travis-ci.org/ALI1416/clock-test)
+[![Build Status](https://travis-ci.com/ALI1416/clock-test.svg?branch=master)](https://travis-ci.com/ALI1416/clock-test)
 
 ## 简介
 `Clock`通过`System.currentTimeMillis()`获取时间戳，放入到线程池中，并1ms刷新一次。  
