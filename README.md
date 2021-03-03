@@ -57,7 +57,7 @@ Mon Mar 01 15:26:03 CST 2021
 [![License](https://img.shields.io/badge/license-BSD-brightgreen)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## 交流
-![交流](https://ali1416.github.io/web/contact.png)
+![交流](https://ali1416.github.io/web/image/contact.png)
 
 ## 赞助
-![赞助](https://ali1416.github.io/web/donate.png)
+![赞助](https://ali1416.github.io/web/image/donate.png)
