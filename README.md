@@ -21,13 +21,13 @@ maven
 <dependency>
     <groupId>cn.404z</groupId>
     <artifactId>clock</artifactId>
-    <version>1.2.0</version>
+    <version>2.0.0</version>
 </dependency>
 ```
 
 gradle
 ```gradle
-implementation 'cn.404z:clock:1.2.0'
+implementation 'cn.404z:clock:2.0.0'
 ```
 
 ## 使用方法
@@ -59,7 +59,7 @@ System.out.println("现在Timestamp为：" + Clock.timestamp());
 ## 交流
 QQ：1416978277  
 微信：1416978277  
-支付宝：1416978277@qq.com
+支付宝：1416978277@qq.com  
 ![交流](https://ali1416.github.io/web/image/contact.png)
 
 ## 赞助
