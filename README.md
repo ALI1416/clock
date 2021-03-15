@@ -18,16 +18,18 @@
 
 maven
 ```xml
+<!-- 必须依赖 -->
 <dependency>
     <groupId>cn.404z</groupId>
     <artifactId>clock</artifactId>
-    <version>2.0.0</version>
+    <version>2.1.0</version>
 </dependency>
 ```
 
 gradle
-```gradle
-implementation 'cn.404z:clock:2.0.0'
+```groovy
+// 必须依赖
+implementation 'cn.404z:clock:2.1.0'
 ```
 
 ## 使用方法
@@ -60,7 +62,7 @@ System.out.println("现在Timestamp为：" + Clock.timestamp());
 QQ：1416978277  
 微信：1416978277  
 支付宝：1416978277@qq.com  
-![交流](https://ali1416.github.io/web/image/contact.png)
+![交流](https://cdn.jsdelivr.net/gh/ALI1416/web/image/contact.png)
 
 ## 赞助
-![赞助](https://ali1416.github.io/web/image/donate.png)
+![赞助](https://cdn.jsdelivr.net/gh/ALI1416/web/image/donate.png)
