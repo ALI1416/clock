@@ -1,10 +1,12 @@
 # High performance clock 高性能时钟
 
 ## 项目地址
-[源码](https://github.com/ALI1416/clock)
+[Github源码](https://github.com/ALI1416/clock)
+[Gitee源码](https://gitee.com/ALI1416/clock)
 [![Build Status](https://travis-ci.com/ALI1416/clock.svg?branch=master)](https://travis-ci.com/ALI1416/clock)
 
-[测试](https://github.com/ALI1416/clock-test)
+[Github测试](https://github.com/ALI1416/clock-test)
+[Gitee测试](https://gitee.com/ALI1416/clock-test)
 [![Build Status](https://travis-ci.com/ALI1416/clock-test.svg?branch=master)](https://travis-ci.com/ALI1416/clock-test)
 
 ## 简介
