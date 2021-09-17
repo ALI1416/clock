@@ -24,14 +24,14 @@ maven
 <dependency>
     <groupId>cn.404z</groupId>
     <artifactId>clock</artifactId>
-    <version>2.1.0</version>
+    <version>2.2.0</version>
 </dependency>
 ```
 
 gradle
 ```groovy
 // 必须依赖
-implementation 'cn.404z:clock:2.1.0'
+implementation 'cn.404z:clock:2.2.0'
 ```
 
 ## 使用方法
