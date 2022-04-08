@@ -1,4 +1,4 @@
-# High performance clock 高性能时钟
+# High Performance Clock 高性能时钟
 
 ## 项目地址
 [Github源码](https://github.com/ALI1416/clock)
@@ -16,7 +16,7 @@
 
 ## 依赖导入
 最新版本
-[![Maven central](https://maven-badges.herokuapp.com/maven-central/cn.404z/clock/badge.svg)](https://maven-badges.herokuapp.com/maven-central/cn.404z/clock)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/cn.404z/clock/badge.svg)](https://maven-badges.herokuapp.com/maven-central/cn.404z/clock)
 
 maven
 ```xml
