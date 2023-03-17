@@ -1,8 +1,9 @@
 # High Performance Clock 高性能时钟
 
+[![License](https://img.shields.io/github/license/ali1416/clock)](https://opensource.org/licenses/BSD-3-Clause)
 [![Maven Central](https://img.shields.io/maven-central/v/cn.404z/clock)](https://mvnrepository.com/artifact/cn.404z/clock)
 [![Tag](https://img.shields.io/github/v/tag/ali1416/clock)](https://github.com/ALI1416/clock/tags)
-[![License](https://img.shields.io/github/license/ali1416/clock)](https://opensource.org/licenses/BSD-3-Clause)
+[![Repo Size](https://img.shields.io/github/repo-size/ali1416/clock?color=success)](https://github.com/ALI1416/clock)
 
 [Github源码](https://github.com/ALI1416/clock)
 [Gitee源码](https://gitee.com/ALI1416/clock)
@@ -22,7 +23,7 @@
 
 `Clock`通过`System.currentTimeMillis()`获取时间戳，放入到线程池中，并1ms刷新一次。  
 由于`System.currentTimeMillis()`的时间戳是通过系统底层获取，比直接获取静态变量慢许多。  
-所以`Clock.now()`的性能更高。
+因此`Clock.now()`的性能更高。
 
 ## 依赖导入
 
@@ -33,6 +34,12 @@
     <artifactId>clock</artifactId>
     <version>2.2.0</version>
 </dependency>
+<!-- 额外依赖(运行未报错，不需要加) -->
+<dependency>
+    <groupId>ch.qos.logback</groupId>
+    <artifactId>logback-classic</artifactId>
+    <version>1.4.5</version>
+</dependency>
 ```
 
 ## 使用方法
@@ -40,17 +47,17 @@
 代码
 
 ```java
-System.out.println("现在时间戳为：" + Clock.now());
-System.out.println("现在Date为：" + Clock.date());
-System.out.println("现在Timestamp为：" + Clock.timestamp());
+log.info("现在时间戳为：{}", Clock.now());
+log.info("现在Date为：{}", Clock.date());
+log.info("现在Timestamp为：{}", Clock.timestamp());
 ```
 
 结果
 
 ```txt
-现在时间戳为：1614583563907
-现在Date为：Mon Mar 01 15:26:03 CST 2021
-现在Timestamp为：2021-03-01 15:26:03.973
+[main] INFO com.demo.ClockTest - 现在时间戳为：1679038464047
+[main] INFO com.demo.ClockTest - 现在Date为：Fri Mar 17 15:34:24 CST 2023
+[main] INFO com.demo.ClockTest - 现在Timestamp为：2023-03-17 15:34:24.047
 ```
 
 ## 性能比较
