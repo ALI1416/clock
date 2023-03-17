@@ -21,7 +21,7 @@ public class Clock {
     /**
      * 现在时间戳(原子长整形，防止多线程异常)
      */
-    private final static AtomicLong NOW = new AtomicLong(System.currentTimeMillis());
+    private static final AtomicLong NOW = new AtomicLong(System.currentTimeMillis());
 
     static {
         Executors.newSingleThreadScheduledExecutor(runnable -> {
@@ -29,6 +29,10 @@ public class Clock {
             thread.setDaemon(true);
             return thread;
         }).scheduleAtFixedRate(() -> NOW.set(System.currentTimeMillis()), 1, 1, TimeUnit.MILLISECONDS);
+    }
+
+    private Clock() {
+
     }
 
     /**

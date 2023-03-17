@@ -6,10 +6,16 @@
 [Github源码](https://github.com/ALI1416/clock)
 [Gitee源码](https://gitee.com/ALI1416/clock)
 [![Java CI with Maven](https://github.com/ALI1416/clock/actions/workflows/maven.yml/badge.svg)](https://github.com/ALI1416/clock/actions/workflows/maven.yml)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock)
 
 [Github测试](https://github.com/ALI1416/clock-test)
 [Gitee测试](https://gitee.com/ALI1416/clock-test)
 [![Java CI with Maven](https://github.com/ALI1416/clock-test/actions/workflows/maven.yml/badge.svg)](https://github.com/ALI1416/clock-test/actions/workflows/maven.yml)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock-test&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock-test)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock-test&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock-test)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock-test&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock-test)
 
 ## 简介
 
