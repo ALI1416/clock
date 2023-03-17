@@ -1,21 +1,22 @@
 # High Performance Clock 高性能时钟
 
-[![Maven Central](https://img.shields.io/maven-central/v/cn.404z/clock?label=Maven%20Central)](https://mvnrepository.com/artifact/cn.404z/clock)
-[![License](https://img.shields.io/badge/license-BSD-brightgreen)](https://opensource.org/licenses/BSD-3-Clause)
+[![Maven Central](https://img.shields.io/maven-central/v/cn.404z/clock)](https://mvnrepository.com/artifact/cn.404z/clock)
+[![Tag](https://img.shields.io/github/v/tag/ali1416/clock)](https://github.com/ALI1416/clock/tags)
+[![License](https://img.shields.io/github/license/ali1416/clock)](https://opensource.org/licenses/BSD-3-Clause)
 
 [Github源码](https://github.com/ALI1416/clock)
 [Gitee源码](https://gitee.com/ALI1416/clock)
 [![Java CI with Maven](https://github.com/ALI1416/clock/actions/workflows/maven.yml/badge.svg)](https://github.com/ALI1416/clock/actions/workflows/maven.yml)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=reliability_rating)
+![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=sqale_rating)
+![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock)
 
 [Github测试](https://github.com/ALI1416/clock-test)
 [Gitee测试](https://gitee.com/ALI1416/clock-test)
 [![Java CI with Maven](https://github.com/ALI1416/clock-test/actions/workflows/maven.yml/badge.svg)](https://github.com/ALI1416/clock-test/actions/workflows/maven.yml)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock-test&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock-test)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock-test&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock-test)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock-test&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock-test)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock-test&metric=reliability_rating)
+![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock-test&metric=sqale_rating)
+![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock-test&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock-test)
 
 ## 简介
 
