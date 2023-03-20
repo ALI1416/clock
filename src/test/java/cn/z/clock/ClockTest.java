@@ -1,9 +1,10 @@
 package cn.z.clock;
 
-import lombok.extern.slf4j.Slf4j;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * <h1>高性能时钟测试</h1>
@@ -16,8 +17,9 @@ import org.junit.runners.MethodSorters;
  * @since 1.0.0
  **/
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-@Slf4j
 public class ClockTest {
+
+    private static final Logger log = LoggerFactory.getLogger(ClockTest.class);
 
     /**
      * 常规
