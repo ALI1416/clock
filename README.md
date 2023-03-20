@@ -7,8 +7,7 @@
 [![Repo Size](https://img.shields.io/github/repo-size/ali1416/clock?label=Repo%20Size&color=success)](https://github.com/ALI1416/clock)
 
 [![Java CI with Maven](https://github.com/ALI1416/clock/actions/workflows/maven.yml/badge.svg)](https://github.com/ALI1416/clock/actions/workflows/maven.yml)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=coverage)
-![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=reliability_rating)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=reliability_rating)
 ![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=sqale_rating)
 ![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock)
 
@@ -21,17 +20,10 @@
 ## 依赖导入
 
 ```xml
-<!-- 必须依赖 -->
 <dependency>
     <groupId>cn.404z</groupId>
     <artifactId>clock</artifactId>
-    <version>2.2.0</version>
-</dependency>
-<!-- 额外依赖(运行未报错，不需要加) -->
-<dependency>
-    <groupId>ch.qos.logback</groupId>
-    <artifactId>logback-classic</artifactId>
-    <version>1.4.5</version>
+    <version>2.2.1</version>
 </dependency>
 ```
 
