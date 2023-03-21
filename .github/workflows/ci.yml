@@ -9,6 +9,12 @@ on:
       - '**.md'
   workflow_dispatch:
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  ORGANIZATION: ali1416
+  PROJECT_KEY: ALI1416_$GITHUB_ACTOR
+
 jobs:
 
   build:
@@ -31,13 +37,10 @@ jobs:
 
     - name: Analyze with SonarCloud
       uses: SonarSource/sonarcloud-github-action@v1.9
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        ORGANIZATION: ali1416
-        PROJECT_KEY: ALI1416_$GITHUB_ACTOR
-        with:
-          args:
-            -Dsonar.organization=$ORGANIZATION
-            -Dsonar.projectKey=$PROJECT_KEY
-      run: mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=$ORGANIZATION -Dsonar.projectKey=$PROJECT_KEY -Dsonar.login=$SONAR_TOKEN
+      with:
+        args:
+          -Dsonar.organization=$ORGANIZATION
+          -Dsonar.projectKey=$PROJECT_KEY
+
+    - name: Send coverage report to SonarCloud
+    run: mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=$ORGANIZATION -Dsonar.projectKey=$PROJECT_KEY -Dsonar.login=$SONAR_TOKEN
