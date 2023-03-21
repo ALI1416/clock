@@ -1,4 +1,4 @@
-name: ci
+name: Java CI
 
 on:
   push:
@@ -43,4 +43,4 @@ jobs:
           -Dsonar.projectKey=$PROJECT_KEY
 
     - name: Send coverage report to SonarCloud
-    run: mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=$ORGANIZATION -Dsonar.projectKey=$PROJECT_KEY -Dsonar.login=$SONAR_TOKEN
+      run: mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=$ORGANIZATION -Dsonar.projectKey=$PROJECT_KEY -Dsonar.login=$SONAR_TOKEN
