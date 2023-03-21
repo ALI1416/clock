@@ -4,13 +4,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>clock</artifactId>
-  <version>2.2.1</version>
+  <version>2.3.0</version>
 
-<!--  <parent>-->
+  <parent>
     <groupId>cn.404z</groupId>
-<!--    <artifactId>parent</artifactId>-->
-<!--    <version>1.2.0</version>-->
-<!--  </parent>-->
+    <artifactId>parent</artifactId>
+    <version>1.2.0</version>
+  </parent>
 
   <name>${project.artifactId}</name>
   <description>High Performance Clock 高性能时钟</description>
@@ -18,8 +18,7 @@
 
   <scm>
     <url>git@github.com:ALI1416/clock.git</url>
-    <connection>scm:${project.scm.url}</connection>
-    <developerConnection>scm:${project.scm.url}</developerConnection>
+    <connection>scm:git@github.com:ALI1416/clock.git</connection>
   </scm>
 
   <dependencies>
@@ -33,7 +32,7 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <version>1.3.6</version>
+      <version>1.4.6</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -43,139 +42,5 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <properties>
-    <java.version>1.8</java.version>
-    <maven.compiler.source>${java.version}</maven.compiler.source>
-    <maven.compiler.target>${java.version}</maven.compiler.target>
-    <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-clean-plugin -->
-    <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
-    <maven-resources-plugin.version>3.3.0</maven-resources-plugin.version>
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-    <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-    <maven-surefire-plugin.version>3.0.0</maven-surefire-plugin.version>
-    <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
-    <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
-    <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-install-plugin -->
-    <maven-install-plugin.version>3.1.0</maven-install-plugin.version>
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
-    <maven-deploy-plugin.version>3.1.0</maven-deploy-plugin.version>
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
-    <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
-    <maven-javadoc-plugin.version>3.5.0</maven-javadoc-plugin.version>
-    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
-    <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
-    <!-- https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin -->
-    <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
-  </properties>
-<profiles>
-  <profile>
-    <id>jacoco</id>
-    <build>
-      <plugins>
-        <plugin>
-          <groupId>org.jacoco</groupId>
-          <artifactId>jacoco-maven-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>prepare-agent</id>
-              <goals>
-                <goal>prepare-agent</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>report</id>
-              <phase>test</phase>
-              <goals>
-                <goal>report</goal>
-              </goals>
-              <configuration>
-                <formats>
-                  <format>XML</format>
-                </formats>
-              </configuration>
-            </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </build>
-  </profile>
-</profiles>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-clean-plugin</artifactId>
-        <version>${maven-clean-plugin.version}</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-resources-plugin</artifactId>
-        <version>${maven-resources-plugin.version}</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>${maven-compiler-plugin.version}</version>
-        <configuration>
-          <source>${java.version}</source>
-          <target>${java.version}</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>${maven-surefire-plugin.version}</version>
-      </plugin>
-      <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <version>${jacoco-maven-plugin.version}</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>${maven-jar-plugin.version}</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-install-plugin</artifactId>
-        <version>${maven-install-plugin.version}</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-deploy-plugin</artifactId>
-        <version>${maven-deploy-plugin.version}</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
-        <version>${maven-source-plugin.version}</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>${maven-javadoc-plugin.version}</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-gpg-plugin</artifactId>
-        <version>${maven-gpg-plugin.version}</version>
-      </plugin>
-      <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>${nexus-staging-maven-plugin.version}</version>
-      </plugin>
-    </plugins>
-  </build>
 
 </project>

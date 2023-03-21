@@ -26,7 +26,7 @@ public class ClockTest {
     public void test00Normal() {
         log.info("现在时间戳为：{}", Clock.now());
         log.info("现在Date为：{}", Clock.date());
-        // log.info("现在Timestamp为：{}", Clock.timestamp());
+        log.info("现在Timestamp为：{}", Clock.timestamp());
         // 现在时间戳为：1614583563907
         // 现在Date为：Mon Mar 01 15:26:03 CST 2021
         // 现在Timestamp为：2021-03-01 15:26:03.973

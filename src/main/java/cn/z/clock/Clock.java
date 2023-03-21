@@ -31,11 +31,6 @@ public class Clock {
         }).scheduleAtFixedRate(() -> NOW.set(System.currentTimeMillis()), 1, 1, TimeUnit.MILLISECONDS);
     }
 
-    /**
-     * 构造函数
-     *
-     * @since 2.2.1
-     */
     private Clock() {
     }
 

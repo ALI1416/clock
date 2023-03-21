@@ -6,8 +6,9 @@
 [![Tag](https://img.shields.io/github/v/tag/ali1416/clock?label=Tag)](https://github.com/ALI1416/clock/tags)
 [![Repo Size](https://img.shields.io/github/repo-size/ali1416/clock?label=Repo%20Size&color=success)](https://github.com/ALI1416/clock)
 
-[![Java CI with Maven](https://github.com/ALI1416/clock/actions/workflows/maven.yml/badge.svg)](https://github.com/ALI1416/clock/actions/workflows/maven.yml)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=reliability_rating)
+[![Java CI](https://github.com/ALI1416/clock/actions/workflows/ci.yml/badge.svg)](https://github.com/ALI1416/clock/actions/workflows/ci.yml)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=coverage)
+![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=reliability_rating)
 ![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=sqale_rating)
 ![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ALI1416_clock)
 
@@ -23,7 +24,7 @@
 <dependency>
     <groupId>cn.404z</groupId>
     <artifactId>clock</artifactId>
-    <version>2.2.1</version>
+    <version>2.3.0</version>
 </dependency>
 ```
 
