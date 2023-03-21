@@ -13,7 +13,7 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   ORGANIZATION: ali1416
-  PROJECT_KEY: ALI1416_$GITHUB_ACTOR
+  PROJECT_KEY: ALI1416_clock
 
 jobs:
 
@@ -32,9 +32,6 @@ jobs:
     - name: Build with Maven
       run: mvn clean install -P jacoco
 
-    - name: aaa
-      run: echo "$GITHUB_ACTOR"
-
     - name: Analyze with SonarCloud
       uses: SonarSource/sonarcloud-github-action@v1.9
       with:
@@ -43,4 +40,4 @@ jobs:
           -Dsonar.projectKey=$PROJECT_KEY
 
     - name: Send coverage report to SonarCloud
-      run: mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=$ORGANIZATION -Dsonar.projectKey=$PROJECT_KEY -Dsonar.login=$SONAR_TOKEN
+      run: mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=$ORGANIZATION -Dsonar.projectKey=$PROJECT_KEY -Dsonar.login=$SONAR_TOKEN
