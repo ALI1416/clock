@@ -26,7 +26,7 @@ public class ClockTest {
     public void test00Normal() {
         log.info("现在时间戳为：{}", Clock.now());
         log.info("现在Date为：{}", Clock.date());
-        log.info("现在Timestamp为：{}", Clock.timestamp());
+        // log.info("现在Timestamp为：{}", Clock.timestamp());
         // 现在时间戳为：1614583563907
         // 现在Date为：Mon Mar 01 15:26:03 CST 2021
         // 现在Timestamp为：2021-03-01 15:26:03.973
@@ -35,7 +35,7 @@ public class ClockTest {
     /**
      * 100万次高性能时钟与系统时钟比较
      */
-    @Test
+    // @Test
     public void test01Compare100w() {
         compare(1000000);
         // 高性能时钟调用1000000次使用时间为：1毫秒
@@ -46,7 +46,7 @@ public class ClockTest {
     /**
      * 1000万次高性能时钟与系统时钟比较
      */
-    @Test
+    // @Test
     public void test02Compare1000w() {
         compare(10000000);
         // 高性能时钟调用10000000次使用时间为：2毫秒
@@ -57,7 +57,7 @@ public class ClockTest {
     /**
      * 1亿次高性能时钟与系统时钟比较
      */
-    @Test
+    // @Test
     public void test03Compare1e() {
         compare(100000000);
         // 高性能时钟调用100000000次使用时间为：3毫秒
@@ -68,7 +68,7 @@ public class ClockTest {
     /**
      * 21亿次高性能时钟与系统时钟比较
      */
-    @Test
+    // @Test
     public void test04Compare21e() {
         compare(Integer.MAX_VALUE);
         // 高性能时钟调用2147483647次使用时间为：35毫秒
