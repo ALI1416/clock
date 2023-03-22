@@ -12,7 +12,7 @@
     <version>1.2.0</version>
   </parent>
 
-  <name>${project.artifactId}</name>
+  <name>clock</name>
   <description>High Performance Clock 高性能时钟</description>
   <url>https://github.com/ALI1416/clock</url>
 
