@@ -1,9 +1,9 @@
 package cn.z.clock;
 
 import lombok.extern.slf4j.Slf4j;
-import org.junit.FixMethodOrder;
-import org.junit.Test;
-import org.junit.runners.MethodSorters;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 
 /**
  * <h1>高性能时钟测试</h1>
@@ -15,15 +15,15 @@ import org.junit.runners.MethodSorters;
  * @author ALI[ali-k@foxmail.com]
  * @since 1.0.0
  **/
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@TestMethodOrder(MethodOrderer.MethodName.class)
 @Slf4j
-public class ClockTest {
+class ClockTest {
 
     /**
      * 常规
      */
     @Test
-    public void test00Normal() {
+    void test00Normal() {
         log.info("现在时间戳为：{}", Clock.now());
         log.info("现在Date为：{}", Clock.date());
         log.info("现在Timestamp为：{}", Clock.timestamp());
@@ -36,7 +36,7 @@ public class ClockTest {
      * 100万次高性能时钟与系统时钟比较
      */
     // @Test
-    public void test01Compare100w() {
+    void test01Compare100w() {
         compare(1000000);
         // 高性能时钟调用1000000次使用时间为：1毫秒
         // 系统时钟调用1000000次使用时间为：5毫秒
@@ -47,7 +47,7 @@ public class ClockTest {
      * 1000万次高性能时钟与系统时钟比较
      */
     // @Test
-    public void test02Compare1000w() {
+    void test02Compare1000w() {
         compare(10000000);
         // 高性能时钟调用10000000次使用时间为：2毫秒
         // 系统时钟调用10000000次使用时间为：22毫秒
@@ -58,7 +58,7 @@ public class ClockTest {
      * 1亿次高性能时钟与系统时钟比较
      */
     // @Test
-    public void test03Compare1e() {
+    void test03Compare1e() {
         compare(100000000);
         // 高性能时钟调用100000000次使用时间为：3毫秒
         // 系统时钟调用100000000次使用时间为：327毫秒
@@ -69,7 +69,7 @@ public class ClockTest {
      * 21亿次高性能时钟与系统时钟比较
      */
     // @Test
-    public void test04Compare21e() {
+    void test04Compare21e() {
         compare(Integer.MAX_VALUE);
         // 高性能时钟调用2147483647次使用时间为：35毫秒
         // 系统时钟调用2147483647次使用时间为：6720毫秒
