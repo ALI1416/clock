@@ -14,9 +14,7 @@
 
 ## 简介
 
-`Clock`通过`System.currentTimeMillis()`获取时间戳，放入到线程池中，并1ms刷新一次。  
-由于`System.currentTimeMillis()`的时间戳是通过系统底层获取，比直接获取静态变量慢许多。  
-因此`Clock.now()`的性能更高。
+此工具类在`高并发`下比`System.currentTimeMillis()`性能更高
 
 ## 依赖导入
 
@@ -57,9 +55,10 @@ log.info("现在Timestamp为：{}", Clock.timestamp());
 
 ## 交流
 
-QQ：1416978277  
-微信：1416978277  
-支付宝：1416978277@qq.com  
+- [x] QQ：`1416978277`
+- [x] 微信：`1416978277`
+- [x] 支付宝：`1416978277@qq.com`
+
 ![交流](https://cdn.jsdelivr.net/gh/ALI1416/ALI1416/image/contact.png)
 
 ## 赞助
