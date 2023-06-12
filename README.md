@@ -1,10 +1,10 @@
 # High Performance Clock 高性能时钟
 
-[![License](https://img.shields.io/github/license/ali1416/clock?label=License)](https://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/github/license/ALI1416/clock?label=License)](https://www.apache.org/licenses/LICENSE-2.0.txt)
 [![Java Support](https://img.shields.io/badge/Java-8+-green)](https://openjdk.org/)
 [![Maven Central](https://img.shields.io/maven-central/v/cn.404z/clock?label=Maven%20Central)](https://mvnrepository.com/artifact/cn.404z/clock)
-[![Tag](https://img.shields.io/github/v/tag/ali1416/clock?label=Tag)](https://github.com/ALI1416/clock/tags)
-[![Repo Size](https://img.shields.io/github/repo-size/ali1416/clock?label=Repo%20Size&color=success)](https://github.com/ALI1416/clock/archive/refs/heads/master.zip)
+[![Tag](https://img.shields.io/github/v/tag/ALI1416/clock?label=Tag)](https://github.com/ALI1416/clock/tags)
+[![Repo Size](https://img.shields.io/github/repo-size/ALI1416/clock?label=Repo%20Size&color=success)](https://github.com/ALI1416/clock/archive/refs/heads/master.zip)
 
 [![Java CI](https://github.com/ALI1416/clock/actions/workflows/ci.yml/badge.svg)](https://github.com/ALI1416/clock/actions/workflows/ci.yml)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_clock&metric=coverage)
@@ -20,13 +20,13 @@
 
 ```xml
 <dependency>
-    <groupId>cn.404z</groupId>
-    <artifactId>clock</artifactId>
-    <version>2.3.0</version>
+  <groupId>cn.404z</groupId>
+  <artifactId>clock</artifactId>
+  <version>2.4.0</version>
 </dependency>
 ```
 
-## 使用方法
+## 使用示例
 
 代码
 
@@ -44,6 +44,8 @@ log.info("现在Timestamp为：{}", Clock.timestamp());
 [main] INFO com.demo.ClockTest - 现在Timestamp为：2023-03-17 15:34:24.047
 ```
 
+更多请见[测试](./src/test)
+
 ## 性能比较
 
 | 次数   | Clock.now()耗时 | System.currentTimeMillis()耗时 | 倍数    |
@@ -53,14 +55,15 @@ log.info("现在Timestamp为：{}", Clock.timestamp());
 | 1亿    | 3毫秒           | 327毫秒                        | 109.0倍 |
 | 21亿   | 35毫秒          | 6720毫秒                       | 192.0倍 |
 
-## 交流
+## 更新日志
 
-- [x] QQ：`1416978277`
-- [x] 微信：`1416978277`
-- [x] 支付宝：`1416978277@qq.com`
+[点击查看](./CHANGELOG.md)
 
-![交流](https://cdn.jsdelivr.net/gh/ALI1416/ALI1416/image/contact.png)
+## 关于
 
-## 赞助
-
-![赞助](https://cdn.jsdelivr.net/gh/ALI1416/ALI1416/image/donate.png)
+<object data="https://404z.cn/images/about.svg" style="max-width:100%;">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://404z.cn/images/about.dark.svg">
+    <img alt="About" src="https://404z.cn/images/about.light.svg">
+  </picture>
+</object>
