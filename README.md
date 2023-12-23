@@ -22,7 +22,7 @@
 <dependency>
   <groupId>cn.404z</groupId>
   <artifactId>clock</artifactId>
-  <version>2.4.0</version>
+  <version>2.5.0</version>
 </dependency>
 ```
 
@@ -34,14 +34,24 @@
 log.info("现在时间戳为：{}", Clock.now());
 log.info("现在Date为：{}", Clock.date());
 log.info("现在Timestamp为：{}", Clock.timestamp());
+log.info("现在Calendar为：{}", Clock.calendar());
+log.info("现在Instant为：{}", Clock.instant());
+log.info("现在LocalDateTime为：{}", Clock.localDateTime());
+log.info("现在OffsetDateTime为：{}", Clock.offsetDateTime());
+log.info("现在ZonedDateTime为：{}", Clock.zonedDateTime());
 ```
 
 结果
 
-```txt
-[main] INFO com.demo.ClockTest - 现在时间戳为：1679038464047
-[main] INFO com.demo.ClockTest - 现在Date为：Fri Mar 17 15:34:24 CST 2023
-[main] INFO com.demo.ClockTest - 现在Timestamp为：2023-03-17 15:34:24.047
+```log
+现在时间戳为：1703313006732
+现在Date为：Sat Dec 23 14:30:06 CST 2023
+现在Timestamp为：2023-12-23 14:30:06.748
+现在Calendar为：java.util.GregorianCalendar[time=1703313006748,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2023,MONTH=11,WEEK_OF_YEAR=51,WEEK_OF_MONTH=4,DAY_OF_MONTH=23,DAY_OF_YEAR=357,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=4,AM_PM=1,HOUR=2,HOUR_OF_DAY=14,MINUTE=30,SECOND=6,MILLISECOND=748,ZONE_OFFSET=28800000,DST_OFFSET=0]
+现在Instant为：2023-12-23T06:30:06.748Z
+现在LocalDateTime为：2023-12-23T14:30:06.748
+现在OffsetDateTime为：2023-12-23T14:30:06.748+08:00
+现在ZonedDateTime为：2023-12-23T14:30:06.748+08:00[Asia/Shanghai]
 ```
 
 更多请见[测试](./src/test)

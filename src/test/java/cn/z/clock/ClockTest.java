@@ -27,9 +27,19 @@ class ClockTest {
         log.info("现在时间戳为：{}", Clock.now());
         log.info("现在Date为：{}", Clock.date());
         log.info("现在Timestamp为：{}", Clock.timestamp());
-        // 现在时间戳为：1614583563907
-        // 现在Date为：Mon Mar 01 15:26:03 CST 2021
-        // 现在Timestamp为：2021-03-01 15:26:03.973
+        log.info("现在Calendar为：{}", Clock.calendar());
+        log.info("现在Instant为：{}", Clock.instant());
+        log.info("现在LocalDateTime为：{}", Clock.localDateTime());
+        log.info("现在OffsetDateTime为：{}", Clock.offsetDateTime());
+        log.info("现在ZonedDateTime为：{}", Clock.zonedDateTime());
+        // 现在时间戳为：1703313006732
+        // 现在Date为：Sat Dec 23 14:30:06 CST 2023
+        // 现在Timestamp为：2023-12-23 14:30:06.748
+        // 现在Calendar为：java.util.GregorianCalendar[time=1703313006748,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2023,MONTH=11,WEEK_OF_YEAR=51,WEEK_OF_MONTH=4,DAY_OF_MONTH=23,DAY_OF_YEAR=357,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=4,AM_PM=1,HOUR=2,HOUR_OF_DAY=14,MINUTE=30,SECOND=6,MILLISECOND=748,ZONE_OFFSET=28800000,DST_OFFSET=0]
+        // 现在Instant为：2023-12-23T06:30:06.748Z
+        // 现在LocalDateTime为：2023-12-23T14:30:06.748
+        // 现在OffsetDateTime为：2023-12-23T14:30:06.748+08:00
+        // 现在ZonedDateTime为：2023-12-23T14:30:06.748+08:00[Asia/Shanghai]
     }
 
     /**
