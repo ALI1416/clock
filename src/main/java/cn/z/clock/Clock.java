@@ -24,6 +24,9 @@ public class Clock {
      * 现在时间戳(原子长整形，防止多线程异常)
      */
     private static final AtomicLong NOW = new AtomicLong(System.currentTimeMillis());
+    /**
+     * 系统区域
+     */
     private static final ZoneId ZONE_ID = ZoneId.systemDefault();
 
     static {
