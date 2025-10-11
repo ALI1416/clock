@@ -34,4 +34,4 @@ jobs:
         env:
           PROJECT_KEY: ALI1416_clock
           SONAR_TOKEN: ${{secrets.SONAR_TOKEN}}
-        run: mvn sonar:sonar -Dsonar.projectKey=$PROJECT_KEY
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=$PROJECT_KEY
